@@ -1,0 +1,80 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_arith.all;
+USE IEEE.std_logic_unsigned.all;
+
+
+ENTITY ULA IS
+PORT  ( 	A: in std_logic_vector(3 downto 0);
+			B: in std_logic_vector(3 downto 0);
+			S: out std_logic_vector(3 downto 0);
+			F: in std_logic_vector(2 downto 0);
+			V: in std_logic;
+			Z: in std_logic;
+			N: in std_logic
+		);
+END ULA;
+
+architecture logica of ULA is
+
+signal resAdder: std_logic_vector(3 downto 0);
+
+component soma4bits
+port(
+		a: in std_logic_vector(3 downto 0);
+		b: in std_logic_vector(3 downto 0);
+		saida : out std_logic_vector(3 downto 0);
+		CarryOut : out std_logic_vector(3 downto 0)
+);
+end component;
+
+signal resSub: std_logic_vector(3 downto 0);
+
+component sub4bits is
+port(
+		a: in std_logic_vector(3 downto 0);
+		b: in std_logic_vector(3 downto 0);
+		saida : out std_logic_vector(3 downto 0);
+		CarryOut : out std_logic_vector(3 downto 0)
+);
+end component;
+
+signal resMulti: std_logic_vector(3 downto 0);
+
+component multiplicadorx3
+port(	a: in std_logic_vector(3 downto 0);
+		saida : out std_logic_vector(3 downto 0);
+		CarryOut : out std_logic_vector(3 downto 0)
+
+		);
+end component;
+
+begin
+
+	Adder4bits: soma4bits
+	port map(a=>A, b=>B, saida=>resAdder);
+	
+	Sub: sub4bits
+	port map(a=>A, b=>B, saida=>resSub);
+	
+	Multi: multiplicadorx3
+	port map(a=>A, saida=>resMulti);
+	
+	--resAdder<=S;
+	
+	S(3 downto 0)<=
+			(A and B) WHEN F="000" ELSE
+			(A or B) WHEN F="001" ELSE
+			(A xor B) WHEN F="010" ELSE
+			not A WHEN F="011" ELSE
+			resAdder WHEN F="100" ELSE
+			resSub WHEN F="101" ELSE
+			resMulti WHEN F="110";
+			
+	--Z<=
+		--'1' WHEN S="0000" ELSE
+		--'0';
+		
+			
+		
+end logica;

@@ -1,0 +1,759 @@
+TimeQuest Timing Analyzer report for ContadorAssinc3bits
+Thu May 10 20:08:16 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'FlipFlopD:flip2|Q_NOT'
+ 12. Slow Model Setup: 'FlipFlopD:flip1|Q_NOT'
+ 13. Slow Model Setup: 'clock'
+ 14. Slow Model Hold: 'clock'
+ 15. Slow Model Hold: 'FlipFlopD:flip1|Q_NOT'
+ 16. Slow Model Hold: 'FlipFlopD:flip2|Q_NOT'
+ 17. Slow Model Minimum Pulse Width: 'clock'
+ 18. Slow Model Minimum Pulse Width: 'FlipFlopD:flip1|Q_NOT'
+ 19. Slow Model Minimum Pulse Width: 'FlipFlopD:flip2|Q_NOT'
+ 20. Clock to Output Times
+ 21. Minimum Clock to Output Times
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Setup: 'FlipFlopD:flip2|Q_NOT'
+ 28. Fast Model Setup: 'FlipFlopD:flip1|Q_NOT'
+ 29. Fast Model Setup: 'clock'
+ 30. Fast Model Hold: 'clock'
+ 31. Fast Model Hold: 'FlipFlopD:flip1|Q_NOT'
+ 32. Fast Model Hold: 'FlipFlopD:flip2|Q_NOT'
+ 33. Fast Model Minimum Pulse Width: 'clock'
+ 34. Fast Model Minimum Pulse Width: 'FlipFlopD:flip1|Q_NOT'
+ 35. Fast Model Minimum Pulse Width: 'FlipFlopD:flip2|Q_NOT'
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Multicorner Timing Analysis Summary
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; ContadorAssinc3bits                                               ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; Clock Name            ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                   ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; clock                 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock }                 ;
+; FlipFlopD:flip1|Q_NOT ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FlipFlopD:flip1|Q_NOT } ;
+; FlipFlopD:flip2|Q_NOT ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FlipFlopD:flip2|Q_NOT } ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                       ;
++-------------+-----------------+-----------------------+-------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name            ; Note                                                  ;
++-------------+-----------------+-----------------------+-------------------------------------------------------+
+; 1329.79 MHz ; 500.0 MHz       ; FlipFlopD:flip2|Q_NOT ; limit due to high minimum pulse width violation (tch) ;
++-------------+-----------------+-----------------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------------------+
+; Slow Model Setup Summary                      ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; FlipFlopD:flip2|Q_NOT ; 0.248 ; 0.000         ;
+; FlipFlopD:flip1|Q_NOT ; 2.454 ; 0.000         ;
+; clock                 ; 2.565 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clock                 ; -2.569 ; -4.864        ;
+; FlipFlopD:flip1|Q_NOT ; -2.318 ; -4.502        ;
+; FlipFlopD:flip2|Q_NOT ; 0.391  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clock                 ; -1.380 ; -3.380        ;
+; FlipFlopD:flip1|Q_NOT ; -0.500 ; -2.000        ;
+; FlipFlopD:flip2|Q_NOT ; -0.500 ; -2.000        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'FlipFlopD:flip2|Q_NOT'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.248 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 1.000        ; 0.000      ; 0.788      ;
+; 0.379 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 1.000        ; 0.000      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'FlipFlopD:flip1|Q_NOT'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 2.454 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.500        ; 2.459      ; 0.791      ;
+; 2.588 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.500        ; 2.459      ; 0.657      ;
+; 2.954 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 1.000        ; 2.459      ; 0.791      ;
+; 3.088 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 1.000        ; 2.459      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock'                                                                                                            ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; 2.565 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.500        ; 2.710      ; 0.931      ;
+; 2.839 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.500        ; 2.710      ; 0.657      ;
+; 3.065 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 1.000        ; 2.710      ; 0.931      ;
+; 3.339 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 1.000        ; 2.710      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock'                                                                                                              ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; -2.569 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.000        ; 2.710      ; 0.657      ;
+; -2.295 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.000        ; 2.710      ; 0.931      ;
+; -2.069 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; -0.500       ; 2.710      ; 0.657      ;
+; -1.795 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; -0.500       ; 2.710      ; 0.931      ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'FlipFlopD:flip1|Q_NOT'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -2.318 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.000        ; 2.459      ; 0.657      ;
+; -2.184 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.000        ; 2.459      ; 0.791      ;
+; -1.818 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; -0.500       ; 2.459      ; 0.657      ;
+; -1.684 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; -0.500       ; 2.459      ; 0.791      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'FlipFlopD:flip2|Q_NOT'                                                                                                       ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.391 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 0.000        ; 0.000      ; 0.657      ;
+; 0.522 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 0.000        ; 0.000      ; 0.788      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; FlipFlopD:flip1|Q      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; FlipFlopD:flip1|Q      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; FlipFlopD:flip1|Q_NOT  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; FlipFlopD:flip1|Q_NOT  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; flip1|Q_NOT|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; flip1|Q_NOT|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; flip1|Q|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; flip1|Q|clk            ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'FlipFlopD:flip1|Q_NOT'                                                                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q_NOT        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q_NOT        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q|clk                  ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'FlipFlopD:flip2|Q_NOT'                                                                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q_NOT        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q_NOT        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q|clk                  ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 5.571 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 3.449 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 5.571 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 3.449 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 3.449 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 5.571 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-----------------------------------------------+
+; Fast Model Setup Summary                      ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; FlipFlopD:flip2|Q_NOT ; 0.641 ; 0.000         ;
+; FlipFlopD:flip1|Q_NOT ; 1.778 ; 0.000         ;
+; clock                 ; 1.877 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clock                 ; -1.608 ; -3.105        ;
+; FlipFlopD:flip1|Q_NOT ; -1.424 ; -2.822        ;
+; FlipFlopD:flip2|Q_NOT ; 0.215  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clock                 ; -1.380 ; -3.380        ;
+; FlipFlopD:flip1|Q_NOT ; -0.500 ; -2.000        ;
+; FlipFlopD:flip2|Q_NOT ; -0.500 ; -2.000        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'FlipFlopD:flip2|Q_NOT'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.641 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 1.000        ; 0.000      ; 0.391      ;
+; 0.665 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 1.000        ; 0.000      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'FlipFlopD:flip1|Q_NOT'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 1.778 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.500        ; 1.498      ; 0.393      ;
+; 1.804 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.500        ; 1.498      ; 0.367      ;
+; 2.278 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 1.000        ; 1.498      ; 0.393      ;
+; 2.304 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 1.000        ; 1.498      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock'                                                                                                            ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; 1.877 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.500        ; 1.682      ; 0.478      ;
+; 1.988 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.500        ; 1.682      ; 0.367      ;
+; 2.377 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 1.000        ; 1.682      ; 0.478      ;
+; 2.488 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 1.000        ; 1.682      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock'                                                                                                              ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; -1.608 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.000        ; 1.682      ; 0.367      ;
+; -1.497 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; 0.000        ; 1.682      ; 0.478      ;
+; -1.108 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q_NOT ; clock       ; -0.500       ; 1.682      ; 0.367      ;
+; -0.997 ; FlipFlopD:flip1|Q_NOT ; FlipFlopD:flip1|Q     ; FlipFlopD:flip1|Q_NOT ; clock       ; -0.500       ; 1.682      ; 0.478      ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'FlipFlopD:flip1|Q_NOT'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.424 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.000        ; 1.498      ; 0.367      ;
+; -1.398 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 0.000        ; 1.498      ; 0.393      ;
+; -0.924 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; -0.500       ; 1.498      ; 0.367      ;
+; -0.898 ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; -0.500       ; 1.498      ; 0.393      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'FlipFlopD:flip2|Q_NOT'                                                                                                       ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.215 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 0.000        ; 0.000      ; 0.367      ;
+; 0.239 ; FlipFlopD:flip3|Q_NOT ; FlipFlopD:flip3|Q     ; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 0.000        ; 0.000      ; 0.391      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; FlipFlopD:flip1|Q      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; FlipFlopD:flip1|Q      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; FlipFlopD:flip1|Q_NOT  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; FlipFlopD:flip1|Q_NOT  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; flip1|Q_NOT|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; flip1|Q_NOT|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; flip1|Q|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; flip1|Q|clk            ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'FlipFlopD:flip1|Q_NOT'                                                                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q_NOT        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; FlipFlopD:flip2|Q_NOT        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip1|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip1|Q_NOT ; Rise       ; flip2|Q|clk                  ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'FlipFlopD:flip2|Q_NOT'                                                                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q_NOT        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; FlipFlopD:flip3|Q_NOT        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip2|Q_NOT~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q_NOT|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; FlipFlopD:flip2|Q_NOT ; Rise       ; flip3|Q|clk                  ;
++--------+--------------+----------------+------------------+-----------------------+------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 3.174 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 1.800 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 3.174 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 1.800 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 1.800 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 3.174 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                ;
++------------------------+-------+--------+----------+---------+---------------------+
+; Clock                  ; Setup ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------+-------+--------+----------+---------+---------------------+
+; Worst-case Slack       ; 0.248 ; -2.569 ; N/A      ; N/A     ; -1.380              ;
+;  FlipFlopD:flip1|Q_NOT ; 1.778 ; -2.318 ; N/A      ; N/A     ; -0.500              ;
+;  FlipFlopD:flip2|Q_NOT ; 0.248 ; 0.215  ; N/A      ; N/A     ; -0.500              ;
+;  clock                 ; 1.877 ; -2.569 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS        ; 0.0   ; -9.366 ; 0.0      ; 0.0     ; -7.38               ;
+;  FlipFlopD:flip1|Q_NOT ; 0.000 ; -4.502 ; N/A      ; N/A     ; -2.000              ;
+;  FlipFlopD:flip2|Q_NOT ; 0.000 ; 0.000  ; N/A      ; N/A     ; -2.000              ;
+;  clock                 ; 0.000 ; -4.864 ; N/A      ; N/A     ; -3.380              ;
++------------------------+-------+--------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 6.022 ; 6.022 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 3.598 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 3.598 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 5.604 ; 5.604 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 5.571 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 3.449 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 5.571 ; 5.571 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 3.449 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 6.402 ; 6.402 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Q[*]      ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q[1]     ; FlipFlopD:flip1|Q_NOT ; 3.381 ; 3.381 ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ; 1.941 ;       ; Rise       ; FlipFlopD:flip1|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+;  Q_NOT[0] ; FlipFlopD:flip1|Q_NOT ;       ; 1.941 ; Fall       ; FlipFlopD:flip1|Q_NOT ;
+; Q[*]      ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q[2]     ; FlipFlopD:flip2|Q_NOT ; 3.195 ; 3.195 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ; 1.800 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ; 1.800 ;       ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[2] ; FlipFlopD:flip2|Q_NOT ; 3.174 ; 3.174 ; Rise       ; FlipFlopD:flip2|Q_NOT ;
+; Q_NOT[*]  ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+;  Q_NOT[1] ; FlipFlopD:flip2|Q_NOT ;       ; 1.800 ; Fall       ; FlipFlopD:flip2|Q_NOT ;
+; Q[*]      ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
+;  Q[0]     ; clock                 ; 3.678 ; 3.678 ; Rise       ; clock                 ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                           ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; FlipFlopD:flip1|Q_NOT ; clock                 ; 2        ; 2        ; 0        ; 0        ;
+; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 2        ; 2        ; 0        ; 0        ;
+; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 2        ; 0        ; 0        ; 0        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                            ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; FlipFlopD:flip1|Q_NOT ; clock                 ; 2        ; 2        ; 0        ; 0        ;
+; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip1|Q_NOT ; 2        ; 2        ; 0        ; 0        ;
+; FlipFlopD:flip2|Q_NOT ; FlipFlopD:flip2|Q_NOT ; 2        ; 0        ; 0        ; 0        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 10 20:08:14 2018
+Info: Command: quartus_sta ContadorAssinc3bits -c ContadorAssinc3bits
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ContadorAssinc3bits.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
+    Info (332105): create_clock -period 1.000 -name FlipFlopD:flip1|Q_NOT FlipFlopD:flip1|Q_NOT
+    Info (332105): create_clock -period 1.000 -name FlipFlopD:flip2|Q_NOT FlipFlopD:flip2|Q_NOT
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.248
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.248         0.000 FlipFlopD:flip2|Q_NOT 
+    Info (332119):     2.454         0.000 FlipFlopD:flip1|Q_NOT 
+    Info (332119):     2.565         0.000 clock 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -2.569
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.569        -4.864 clock 
+    Info (332119):    -2.318        -4.502 FlipFlopD:flip1|Q_NOT 
+    Info (332119):     0.391         0.000 FlipFlopD:flip2|Q_NOT 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -3.380 clock 
+    Info (332119):    -0.500        -2.000 FlipFlopD:flip1|Q_NOT 
+    Info (332119):    -0.500        -2.000 FlipFlopD:flip2|Q_NOT 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.641
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.641         0.000 FlipFlopD:flip2|Q_NOT 
+    Info (332119):     1.778         0.000 FlipFlopD:flip1|Q_NOT 
+    Info (332119):     1.877         0.000 clock 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -1.608
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.608        -3.105 clock 
+    Info (332119):    -1.424        -2.822 FlipFlopD:flip1|Q_NOT 
+    Info (332119):     0.215         0.000 FlipFlopD:flip2|Q_NOT 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -3.380 clock 
+    Info (332119):    -0.500        -2.000 FlipFlopD:flip1|Q_NOT 
+    Info (332119):    -0.500        -2.000 FlipFlopD:flip2|Q_NOT 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 460 megabytes
+    Info: Processing ended: Thu May 10 20:08:16 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

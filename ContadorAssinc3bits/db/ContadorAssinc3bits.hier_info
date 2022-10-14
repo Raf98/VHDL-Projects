@@ -1,0 +1,43 @@
+|ContadorAssinc3bits
+clock => FlipFlopD:flip1.clock
+Q[0] <= FlipFlopD:flip1.Q
+Q[1] <= FlipFlopD:flip2.Q
+Q[2] <= FlipFlopD:flip3.Q
+Q_NOT[0] <= FlipFlopD:flip1.Q_NOT
+Q_NOT[1] <= FlipFlopD:flip2.Q_NOT
+Q_NOT[2] <= FlipFlopD:flip3.Q_NOT
+
+
+|ContadorAssinc3bits|FlipFlopD:flip1
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorAssinc3bits|FlipFlopD:flip2
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorAssinc3bits|FlipFlopD:flip3
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

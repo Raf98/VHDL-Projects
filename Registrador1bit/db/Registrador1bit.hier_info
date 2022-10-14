@@ -1,0 +1,10 @@
+|Registrador1bit
+D => Q.DATAB
+clock => Q~reg0.CLK
+clock => aux.CLK
+clear => Q~reg0.ACLR
+clear => aux.ACLR
+load => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

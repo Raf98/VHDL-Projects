@@ -1,0 +1,19 @@
+display<=
+	         --"1111110" WHEN (Vadder = '1' and (F="010" or F="011")) ELSE
+				--"1111110" WHEN (Vmulti = '1' and  F="111") ELSE
+				"0000001" WHEN saidaint="0000" ELSE
+				"1001111" WHEN saidaint="0001" ELSE
+				"0010010" WHEN saidaint="0010" ELSE
+				"0000110" WHEN saidaint="0011" ELSE
+				"1001100" WHEN saidaint="0100" ELSE
+				"0100100" WHEN saidaint="0101" ELSE
+				"0100000" WHEN saidaint="0110" ELSE
+				"0001111" WHEN saidaint="0111" ELSE
+			   "0000000" WHEN saidaint="1000" ELSE
+				"0001111" WHEN saidaint="1001" ELSE
+				"0100000" WHEN saidaint="1010" ELSE
+				"0100100" WHEN saidaint="1011" ELSE
+				"1001100" WHEN saidaint="1100" ELSE
+				"0000110" WHEN saidaint="1101" ELSE
+				"0010010" WHEN saidaint="1110" ELSE
+				"1001111" WHEN saidaint="1111";

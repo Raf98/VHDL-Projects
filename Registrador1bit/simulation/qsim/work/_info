@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Registrador1bit\simulation\qsim
+vRegistrador1bit
+Z1 IQIXO4R=J3Njh8b7L3i8U63
+Z2 VHc]f5jh5Y3JF;68_8SGPF3
+Z3 dC:\altera\13.0sp1\Registrador1bit\simulation\qsim
+Z4 w1524771789
+Z5 8Registrador1bit.vo
+Z6 FRegistrador1bit.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@registrador1bit
+!i10b 1
+Z10 !s100 zihF4=UL<B2UgCKEEP3C;2
+!s85 0
+Z11 !s108 1524771789.998000
+Z12 !s107 Registrador1bit.vo|
+Z13 !s90 -work|work|Registrador1bit.vo|
+!s101 -O0
+vRegistrador1bit_vlg_check_tst
+!i10b 1
+!s100 dg9=n?3PZ[SBkJXFEYGke0
+I4H3;YPAWPD]Pkn`dZ?7lQ0
+V_3fe1HLB;Za:39zbmS_0I0
+R3
+Z14 w1524771788
+Z15 8Registrador1bit.vt
+Z16 FRegistrador1bit.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1524771790.092000
+Z18 !s107 Registrador1bit.vt|
+Z19 !s90 -work|work|Registrador1bit.vt|
+!s101 -O0
+R8
+n@registrador1bit_vlg_check_tst
+vRegistrador1bit_vlg_sample_tst
+!i10b 1
+!s100 ZnV8lE56l9TOaI9NSh7_U2
+I5>kHEAOYQ>HWT]AR^gcSe2
+V5Ucg8WNT`c@]j82YDz`DG0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@registrador1bit_vlg_sample_tst
+vRegistrador1bit_vlg_vec_tst
+!i10b 1
+!s100 S`NicR0>?2`F^5<7U8`2o1
+IhFnR;9JPBaO@BgK?Ig]XG0
+VL7o?CBLj6ka0:8DKzFD;82
+R3
+R14
+R15
+R16
+L0 158
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@registrador1bit_vlg_vec_tst

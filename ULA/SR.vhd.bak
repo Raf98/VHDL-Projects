@@ -1,0 +1,31 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_arith.all;
+USE IEEE.std_logic_unsigned.all;
+
+entity megamux IS
+port(
+a: in std_logic_vector(3 downto 0);
+saida: out std_logic_vector(3 downto 0)
+);
+end megamux;
+architecture archmegamux of megamux is
+begin
+component mux
+port(
+a: in std_logic;
+b: in std_logic;
+sel: in std_logic;
+saida: out std_logic
+);
+end component;
+
+Shift3: mux
+port map(a=>0,b=>a(3),sel=>1,saida=>saida(3));
+Shift2: mux
+port map(a=>a(3), b=>a(2), sel=>1,saida=>saida(2));
+Shift1: mux
+port map(a=>a(2),b=>a(1),sel=>1,saida=>saida(1));
+Shift0: mux
+port map(a=>a(1),b=>a(0), sel=>1,saida=>saida(0));
+end archmegamux;

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Downloads\Trab3_Rafael-Parcial\simulation\qsim
+vULA
+Z1 ILO4dkZS8Tl^ghgG<2G2n_1
+Z2 VWGgX7niU;WR5[JSUcj1T>2
+Z3 dC:\Users\Rafael\Documents\Engenharia de Computação\Semestre 2\Circuitos Digitais 1\Trab3_Rafael-Parcialv3\simulation\qsim
+Z4 w1520387929
+Z5 8ULA.vo
+Z6 FULA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ULA.vo|
+Z9 o-work work -O0
+Z10 n@u@l@a
+!i10b 1
+Z11 !s100 9H[PM<P5?4XgZAhh`n^Z23
+!s85 0
+Z12 !s108 1520387950.936000
+Z13 !s107 ULA.vo|
+!s101 -O0
+vULA_vlg_check_tst
+!i10b 1
+!s100 _>7l>WiOg2T6VMXmCJTY;2
+IiGTNeoRM<o<hQ[:B1Kka]2
+V?^3JgMiV]4@Nz;kZgZnX_3
+R3
+Z14 w1520387922
+Z15 8ULA.vt
+Z16 FULA.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1520387951.623000
+Z18 !s107 ULA.vt|
+Z19 !s90 -work|work|ULA.vt|
+!s101 -O0
+R9
+Z20 n@u@l@a_vlg_check_tst
+vULA_vlg_sample_tst
+!i10b 1
+!s100 UPb?T>PoBjLR4:oKHVB>R1
+Ii?0G=eORkmlQGRSf:jOXl1
+VDOkonU4cLZQb`DM0:Id`h2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z21 n@u@l@a_vlg_sample_tst
+vULA_vlg_vec_tst
+!i10b 1
+!s100 YfS0^QY@Q^UK2@b1YiBl=2
+IOhSX8_CMoeFN=77n^c1JZ1
+Z22 V@H?nKIIOPXSf=Pjh4d^VA0
+R3
+R14
+R15
+R16
+L0 451
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z23 n@u@l@a_vlg_vec_tst

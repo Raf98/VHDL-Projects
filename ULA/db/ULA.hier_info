@@ -1,0 +1,384 @@
+|ULA
+A[0] => saidaint.IN0
+A[0] => saidaint.IN0
+A[0] => saidaint.IN0
+A[0] => soma4bits:Adder4bits.a[0]
+A[0] => multiplicadorx3:Multi.a[0]
+A[0] => saidaint[0].DATAB
+A[1] => saidaint.IN0
+A[1] => saidaint.IN0
+A[1] => saidaint.IN0
+A[1] => soma4bits:Adder4bits.a[1]
+A[1] => multiplicadorx3:Multi.a[1]
+A[1] => saidaint[1].DATAB
+A[2] => saidaint.IN0
+A[2] => saidaint.IN0
+A[2] => saidaint.IN0
+A[2] => soma4bits:Adder4bits.a[2]
+A[2] => multiplicadorx3:Multi.a[2]
+A[2] => saidaint[2].DATAB
+A[3] => saidaint.IN0
+A[3] => saidaint.IN0
+A[3] => saidaint.IN0
+A[3] => soma4bits:Adder4bits.a[3]
+A[3] => multiplicadorx3:Multi.a[3]
+A[3] => saidaint[3].DATAB
+B[0] => saidaint.IN1
+B[0] => saidaint.IN1
+B[0] => saidaint.IN1
+B[0] => soma4bits:Adder4bits.b[0]
+B[0] => SR:Shift.a[0]
+B[1] => saidaint.IN1
+B[1] => saidaint.IN1
+B[1] => saidaint.IN1
+B[1] => soma4bits:Adder4bits.b[1]
+B[1] => SR:Shift.a[1]
+B[2] => saidaint.IN1
+B[2] => saidaint.IN1
+B[2] => saidaint.IN1
+B[2] => soma4bits:Adder4bits.b[2]
+B[2] => SR:Shift.a[2]
+B[3] => saidaint.IN1
+B[3] => saidaint.IN1
+B[3] => saidaint.IN1
+B[3] => soma4bits:Adder4bits.b[3]
+B[3] => SR:Shift.a[3]
+F[0] => Equal0.IN5
+F[0] => Equal1.IN5
+F[0] => Equal2.IN5
+F[0] => Equal3.IN5
+F[0] => Equal4.IN5
+F[0] => Equal22.IN5
+F[0] => Equal23.IN5
+F[0] => Equal24.IN5
+F[1] => Equal0.IN4
+F[1] => Equal1.IN4
+F[1] => Equal2.IN4
+F[1] => Equal3.IN4
+F[1] => Equal4.IN4
+F[1] => Equal22.IN4
+F[1] => Equal23.IN4
+F[1] => Equal24.IN4
+F[2] => Equal0.IN3
+F[2] => Equal1.IN3
+F[2] => Equal2.IN3
+F[2] => Equal3.IN3
+F[2] => Equal4.IN3
+F[2] => Equal22.IN3
+F[2] => Equal23.IN3
+F[2] => Equal24.IN3
+Z <= Equal21.DB_MAX_OUTPUT_PORT_TYPE
+VLED <= VLED.DB_MAX_OUTPUT_PORT_TYPE
+display7[0] <= display[0].DB_MAX_OUTPUT_PORT_TYPE
+display7[1] <= display[1].DB_MAX_OUTPUT_PORT_TYPE
+display7[2] <= display[2].DB_MAX_OUTPUT_PORT_TYPE
+display7[3] <= display[3].DB_MAX_OUTPUT_PORT_TYPE
+display7[4] <= display[4].DB_MAX_OUTPUT_PORT_TYPE
+display7[5] <= display[5].DB_MAX_OUTPUT_PORT_TYPE
+display7[6] <= display[6].DB_MAX_OUTPUT_PORT_TYPE
+display72[0] <= saidaint[3].DB_MAX_OUTPUT_PORT_TYPE
+display72[1] <= <VCC>
+display72[2] <= <VCC>
+display72[3] <= <VCC>
+display72[4] <= <VCC>
+display72[5] <= <VCC>
+display72[6] <= <VCC>
+
+
+|ULA|soma4bits:Adder4bits
+a[0] => somadorCompleto:Adder0.a
+a[1] => somadorCompleto:Adder1.a
+a[2] => somadorCompleto:Adder2.a
+a[3] => somadorCompleto:Adder3.a
+b[0] => bop[0].IN0
+b[1] => bop[1].IN0
+b[2] => bop[2].IN0
+b[3] => bop[3].IN0
+op => bop[0].IN1
+op => bop[1].IN1
+op => bop[2].IN1
+op => bop[3].IN1
+op => somadorCompleto:Adder0.carryIn
+saida[0] <= somadorCompleto:Adder0.saida
+saida[1] <= somadorCompleto:Adder1.saida
+saida[2] <= somadorCompleto:Adder2.saida
+saida[3] <= somadorCompleto:Adder3.saida
+over <= over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|soma4bits:Adder4bits|somadorCompleto:Adder0
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|soma4bits:Adder4bits|somadorCompleto:Adder1
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|soma4bits:Adder4bits|somadorCompleto:Adder2
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|soma4bits:Adder4bits|somadorCompleto:Adder3
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi
+a[0] => soma4bits:Multix2.a[0]
+a[0] => soma4bits:Multix2.b[0]
+a[0] => soma4bits:Multix3.b[0]
+a[1] => soma4bits:Multix2.a[1]
+a[1] => soma4bits:Multix2.b[1]
+a[1] => soma4bits:Multix3.b[1]
+a[2] => soma4bits:Multix2.a[2]
+a[2] => soma4bits:Multix2.b[2]
+a[2] => soma4bits:Multix3.b[2]
+a[3] => soma4bits:Multix2.a[3]
+a[3] => soma4bits:Multix2.b[3]
+a[3] => soma4bits:Multix3.b[3]
+saida[0] <= soma4bits:Multix3.saida[0]
+saida[1] <= soma4bits:Multix3.saida[1]
+saida[2] <= soma4bits:Multix3.saida[2]
+saida[3] <= soma4bits:Multix3.saida[3]
+over <= over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix2
+a[0] => somadorCompleto:Adder0.a
+a[1] => somadorCompleto:Adder1.a
+a[2] => somadorCompleto:Adder2.a
+a[3] => somadorCompleto:Adder3.a
+b[0] => bop[0].IN0
+b[1] => bop[1].IN0
+b[2] => bop[2].IN0
+b[3] => bop[3].IN0
+op => bop[0].IN1
+op => bop[1].IN1
+op => bop[2].IN1
+op => bop[3].IN1
+op => somadorCompleto:Adder0.carryIn
+saida[0] <= somadorCompleto:Adder0.saida
+saida[1] <= somadorCompleto:Adder1.saida
+saida[2] <= somadorCompleto:Adder2.saida
+saida[3] <= somadorCompleto:Adder3.saida
+over <= over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix2|somadorCompleto:Adder0
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix2|somadorCompleto:Adder1
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix2|somadorCompleto:Adder2
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix2|somadorCompleto:Adder3
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix3
+a[0] => somadorCompleto:Adder0.a
+a[1] => somadorCompleto:Adder1.a
+a[2] => somadorCompleto:Adder2.a
+a[3] => somadorCompleto:Adder3.a
+b[0] => bop[0].IN0
+b[1] => bop[1].IN0
+b[2] => bop[2].IN0
+b[3] => bop[3].IN0
+op => bop[0].IN1
+op => bop[1].IN1
+op => bop[2].IN1
+op => bop[3].IN1
+op => somadorCompleto:Adder0.carryIn
+saida[0] <= somadorCompleto:Adder0.saida
+saida[1] <= somadorCompleto:Adder1.saida
+saida[2] <= somadorCompleto:Adder2.saida
+saida[3] <= somadorCompleto:Adder3.saida
+over <= over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix3|somadorCompleto:Adder0
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix3|somadorCompleto:Adder1
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix3|somadorCompleto:Adder2
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|multiplicadorx3:Multi|soma4bits:Multix3|somadorCompleto:Adder3
+a => saida.IN0
+a => carryOut.IN0
+a => carryOut.IN0
+b => saida.IN1
+b => carryOut.IN1
+b => carryOut.IN0
+carryIn => saida.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SR:Shift
+a[0] => mux:Shift0.b
+a[1] => mux:Shift1.b
+a[1] => mux:Shift0.a
+a[2] => mux:Shift2.b
+a[2] => mux:Shift1.a
+a[3] => mux:Shift3.b
+a[3] => mux:Shift2.a
+saida[0] <= mux:Shift0.saida
+saida[1] <= mux:Shift1.saida
+saida[2] <= mux:Shift2.saida
+saida[3] <= mux:Shift3.saida
+
+
+|ULA|SR:Shift|mux:Shift3
+a => saida.IN0
+b => saida.IN0
+sel => saida.IN1
+sel => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SR:Shift|mux:Shift2
+a => saida.IN0
+b => saida.IN0
+sel => saida.IN1
+sel => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SR:Shift|mux:Shift1
+a => saida.IN0
+b => saida.IN0
+sel => saida.IN1
+sel => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SR:Shift|mux:Shift0
+a => saida.IN0
+b => saida.IN0
+sel => saida.IN1
+sel => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

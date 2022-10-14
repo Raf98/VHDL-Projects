@@ -1,0 +1,17 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_arith.all;
+USE IEEE.std_logic_unsigned.all;
+
+entity mux IS
+port(
+a: in std_logic_vector(3 downto 0);
+b: in std_logic_vector(3 downto 0);
+sel: in std_logic;
+saida: out std_logic_vector(3 downto 0)
+);
+end sr;
+architecture muxs of mux is 
+begin 
+saida=>(sel and a) or (not(sel)) and b);
+end muxs;

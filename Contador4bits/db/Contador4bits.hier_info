@@ -1,0 +1,55 @@
+|Contador4bits
+clock => FlipFlopD:FF0.clock
+clock => FlipFlopD:FF1.clock
+clock => FlipFlopD:FF2.clock
+clock => FlipFlopD:FF3.clock
+Q[0] <= FlipFlopD:FF0.Q
+Q[1] <= FlipFlopD:FF1.Q
+Q[2] <= FlipFlopD:FF2.Q
+Q[3] <= FlipFlopD:FF3.Q
+
+
+|Contador4bits|FlipFlopD:FF0
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|FlipFlopD:FF1
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|FlipFlopD:FF2
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|FlipFlopD:FF3
+D => Q~reg0.DATAIN
+D => Q_NOT~reg0.DATAIN
+clock => Q_NOT~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q_NOT~reg0.PRESET
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_NOT <= Q_NOT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Wed Apr 25 17:25:48 2018
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : FilpFlopD
+Top-level Entity Name : FlipFlopD
+Family : Cyclone IV GX
+Total logic elements : 2
+    Total combinational functions : 0
+    Dedicated logic registers : 2
+Total registers : 2
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

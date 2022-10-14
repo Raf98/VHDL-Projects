@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\filip\Downloads\Contador4bits\simulation\qsim
+vContador4bits
+Z1 I@`0`T]QZ22?ngE_Egbml_3
+Z2 VQIPUe@4<o1DmTPL52maN62
+Z3 dC:\Users\filip\Downloads\Contador4bits\simulation\qsim
+Z4 w1525995346
+Z5 8Contador4bits.vo
+Z6 FContador4bits.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@contador4bits
+!i10b 1
+Z10 !s100 gUl3If_LXEDfT?JAFHY:Y0
+!s85 0
+Z11 !s108 1525995347.638000
+Z12 !s107 Contador4bits.vo|
+Z13 !s90 -work|work|Contador4bits.vo|
+!s101 -O0
+vContador4bits_vlg_check_tst
+!i10b 1
+!s100 8PJ@5fa=<7kMbRDMiJgQo3
+I0SMZY436hW<JiNl;mb=842
+VI;_a<1KbKCNC``C=T9J9d1
+R3
+Z14 w1525995345
+Z15 8Contador4bits.vt
+Z16 FContador4bits.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1525995347.826000
+Z18 !s107 Contador4bits.vt|
+Z19 !s90 -work|work|Contador4bits.vt|
+!s101 -O0
+R8
+n@contador4bits_vlg_check_tst
+vContador4bits_vlg_sample_tst
+!i10b 1
+!s100 ]6Xl4BbBib@H]4K?WYX_X3
+IGW1]KlD4@e6ZM9m[[TO=S3
+VjYS1R1WLjFHY@Vk]hDRe_3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@contador4bits_vlg_sample_tst
+vContador4bits_vlg_vec_tst
+!i10b 1
+!s100 ammOaM0MlakJzaX8YPOX41
+I4LB3o^OTJJ6`m]kBi5===0
+VCbMLeGf<2jf1T3R>0A?9b1
+R3
+R14
+R15
+R16
+L0 205
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@contador4bits_vlg_vec_tst

@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FlipFlopD is 
+port(
+	
+	D,C	   : in std_logic;
+	Q,Q_NOT	: out std_logic
+	
+	);
+end FlipFlopD;
+
+architecture memory of FlipFlopD is
+
+begin
+	
+	process(c,d)
+	
+	begin 
+		if(clk'event and clock = '1') then 
+			if(D = '1')
+				Q<=1;
+				Q_NOT<=0;
+			else
+				Q<=0;
+				Q_NOT<=1;
+			end if;
+		end if;
+	end process;
+
+end memory;

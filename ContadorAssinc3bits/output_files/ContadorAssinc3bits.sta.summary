@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'FlipFlopD:flip2|Q_NOT'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Slow Model Setup 'FlipFlopD:flip1|Q_NOT'
+Slack : 2.454
+TNS   : 0.000
+
+Type  : Slow Model Setup 'clock'
+Slack : 2.565
+TNS   : 0.000
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.569
+TNS   : -4.864
+
+Type  : Slow Model Hold 'FlipFlopD:flip1|Q_NOT'
+Slack : -2.318
+TNS   : -4.502
+
+Type  : Slow Model Hold 'FlipFlopD:flip2|Q_NOT'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -3.380
+
+Type  : Slow Model Minimum Pulse Width 'FlipFlopD:flip1|Q_NOT'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Slow Model Minimum Pulse Width 'FlipFlopD:flip2|Q_NOT'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Setup 'FlipFlopD:flip2|Q_NOT'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Fast Model Setup 'FlipFlopD:flip1|Q_NOT'
+Slack : 1.778
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : 1.877
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.608
+TNS   : -3.105
+
+Type  : Fast Model Hold 'FlipFlopD:flip1|Q_NOT'
+Slack : -1.424
+TNS   : -2.822
+
+Type  : Fast Model Hold 'FlipFlopD:flip2|Q_NOT'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -3.380
+
+Type  : Fast Model Minimum Pulse Width 'FlipFlopD:flip1|Q_NOT'
+Slack : -0.500
+TNS   : -2.000
+
+Type  : Fast Model Minimum Pulse Width 'FlipFlopD:flip2|Q_NOT'
+Slack : -0.500
+TNS   : -2.000
+
+------------------------------------------------------------

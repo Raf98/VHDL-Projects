@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Documents\Contador3bits\simulation\qsim
+vContador3bits
+Z1 !s100 =2LZZ8;jGXh_jlS=:^mE81
+Z2 IFzYN6zI99FjUJ;Z_Y;IVP1
+Z3 VY@>6lWNfk::9Vh3;XZXad3
+Z4 dC:\Users\Aluno\Documents\Contador3bits\simulation\qsim
+Z5 w1525376013
+Z6 8Contador3bits.vo
+Z7 FContador3bits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Contador3bits.vo|
+Z10 o-work work -O0
+Z11 n@contador3bits
+!i10b 1
+!s85 0
+Z12 !s108 1525376014.431000
+Z13 !s107 Contador3bits.vo|
+!s101 -O0
+vContador3bits_vlg_check_tst
+!i10b 1
+Z14 !s100 OY`2Z6Z3kY>bzRXo5M:Wb2
+Z15 IhNbJZGhHN0N19RPJg3jNR0
+Z16 VUoPaf0k6PEaX8Y]e]Kh;C3
+R4
+R5
+Z17 8Contador3bits.vt
+Z18 FContador3bits.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1525376014.847000
+Z20 !s107 Contador3bits.vt|
+Z21 !s90 -work|work|Contador3bits.vt|
+!s101 -O0
+R10
+Z22 n@contador3bits_vlg_check_tst
+vContador3bits_vlg_sample_tst
+!i10b 1
+Z23 !s100 e:9Ni9@0@jdVd>M;<J17j3
+Z24 I<j46W;F_^G;YnUV1N<fe01
+Z25 VgKHBBc?2hW?olkIfL`DP?0
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@contador3bits_vlg_sample_tst
+vContador3bits_vlg_vec_tst
+!i10b 1
+!s100 JN7]aiK4g;FYO01Mj6Mej3
+I6b_TBKQX31aXncnDEh^Bo2
+Z27 VQSYLm=U2:g9@Mg4EQT:lF3
+R4
+R5
+R17
+R18
+Z28 L0 193
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@contador3bits_vlg_vec_tst
