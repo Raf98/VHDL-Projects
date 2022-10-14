@@ -1,0 +1,63 @@
+C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd {1 {vcom -work work -2002 -explicit C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package CarrySelectPack
+-- Compiling entity CarrySelect
+-- Compiling architecture structure of CarrySelect
+
+} {} {}} C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd {1 {vcom -work work -2002 -explicit C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux
+-- Compiling architecture structure of Mux
+
+} {} {}} C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd {1 {vcom -work work -2002 -explicit C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder
+-- Compiling architecture behavior of FullAdder
+
+} {} {}} C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectTB.vhd {1 {vcom -work work -2002 -explicit {C:\Users\LPDar\Documents\SDA\Somadores\CarrySelect\CarrySelectTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package CarrySelectPack
+-- Compiling entity CarrySelectTB
+-- Compiling architecture behavior of CarrySelectTB
+
+} {} {}} C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd {1 {vcom -work work -2002 -explicit C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling package CarrySelectPack
+
+} {} {}} C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd {1 {vcom -work work -2002 -explicit C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package CarrySelectPack
+-- Compiling entity CarrySelectBlock
+-- Compiling architecture structure of CarrySelectBlock
+
+} {} {}}

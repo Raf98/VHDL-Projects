@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\LPDar\Documents\SDA\Multiplicadores\Funcional\simulation\qsim
+vFunctional
+Z1 IJh:_>>Q0AVAafo@F]JoB<1
+Z2 V6@3NCzOlnFb[hF7a@Z:lN1
+Z3 dC:\Users\LPDar\Documents\SDA\Multiplicadores\Funcional\simulation\qsim
+Z4 w1559531147
+Z5 8Functional.vo
+Z6 FFunctional.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Functional.vo|
+Z9 o-work work -O0
+Z10 n@functional
+!i10b 1
+Z11 !s100 mHU@3BHFn?UiENa>ni>A_3
+!s85 0
+Z12 !s108 1559531148.221000
+Z13 !s107 Functional.vo|
+!s101 -O0
+vFunctional_vlg_check_tst
+!i10b 1
+!s100 oW5ndI52mlHd]>>bd=U3R2
+I<OP>I2;X@6Y8m;zG3mgV80
+VFTU>=jFf4<mjW0OPIhTfk0
+R3
+Z14 w1559531146
+Z15 8Functional.vt
+Z16 FFunctional.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1559531148.580000
+Z18 !s107 Functional.vt|
+Z19 !s90 -work|work|Functional.vt|
+!s101 -O0
+R9
+Z20 n@functional_vlg_check_tst
+vFunctional_vlg_sample_tst
+!i10b 1
+!s100 5eGQ5gaILznj87QR]@?681
+I_S5g[F9YolWVAHOM4[lFA3
+V^H4@^AohUF8AYhP4`CNoY2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z21 n@functional_vlg_sample_tst
+vFunctional_vlg_vec_tst
+!i10b 1
+!s100 `i1aCN999Pjh`hQNMViFC2
+I9;MnJXmIm0Ik92:5CLn822
+Z22 VcCU:nM`gE?;lT<LUS8=zC0
+R3
+R14
+R15
+R16
+L0 207
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z23 n@functional_vlg_vec_tst

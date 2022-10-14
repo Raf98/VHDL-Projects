@@ -1,0 +1,226 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\LPDar\Documents\SDA\Somadores\RippleCarry2
+Ecarryselect
+Z0 w1560119802
+Z1 DPx4 work 15 carryselectpack 0 22 VQ7C:77Q05?5k^GRhN8W63
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\LPDar\Documents\SDA\Somadores\CarrySelect
+Z8 8C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd
+Z9 FC:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd
+l0
+L10
+VDEDg`9]CoW6;@UMmmTmCj3
+Z10 OV;C;10.1d;51
+32
+Z11 !s108 1560120215.393000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd|
+Z13 !s107 C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelect.vhd|
+Z14 o-work work -2002 -explicit -O0
+Z15 tExplicit 1
+!s100 j;CmT601k81MFL@0L0mU92
+!i10b 1
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 11 carryselect 0 22 DEDg`9]CoW6;@UMmmTmCj3
+l29
+L22
+VC@`[>dgbD?foFEIci17YT0
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 E_O]aC5[V;iKm<ZO=1j7A3
+!i10b 1
+Ecarryselectblock
+Z16 w1559741151
+R2
+R3
+R4
+R1
+R5
+R6
+R7
+Z17 8C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd
+Z18 FC:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd
+l0
+L7
+V16_M>PlTJPGNDaDzSmY`U1
+R10
+32
+Z19 !s108 1560120215.841000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd|
+Z21 !s107 C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectBlock.vhd|
+R14
+R15
+!s100 ziCPZ<eEjJ5Sja;j9`_GE1
+!i10b 1
+Astructure
+R2
+R3
+R4
+R1
+R5
+R6
+DEx4 work 16 carryselectblock 0 22 16_M>PlTJPGNDaDzSmY`U1
+l24
+L18
+VF?CGAo;STOLFbZP5ZmIY70
+R10
+32
+R19
+R20
+R21
+R14
+R15
+!s100 fG[@9bjkk1bH8K@7gjSk_2
+!i10b 1
+Pcarryselectpack
+R2
+R3
+R4
+R5
+R6
+w1560119809
+R7
+8C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd
+FC:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd
+l0
+L7
+VVQ7C:77Q05?5k^GRhN8W63
+R10
+32
+R14
+R15
+!s100 Uhai9]bEEI]0DoKS:AjLl1
+!i10b 1
+!s108 1560120216.365000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd|
+!s107 C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/CarrySelectPack.vhd|
+Ecarryselecttb
+Z22 w1560120193
+R1
+R2
+R4
+R3
+R5
+R6
+R7
+Z23 8C:\Users\LPDar\Documents\SDA\Somadores\CarrySelect\CarrySelectTB.vhd
+Z24 FC:\Users\LPDar\Documents\SDA\Somadores\CarrySelect\CarrySelectTB.vhd
+l0
+L11
+VgC[G7M4:mYA41ScdC[gbC2
+R10
+32
+Z25 !s108 1560120216.781000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\LPDar\Documents\SDA\Somadores\CarrySelect\CarrySelectTB.vhd|
+Z27 !s107 C:\Users\LPDar\Documents\SDA\Somadores\CarrySelect\CarrySelectTB.vhd|
+R14
+R15
+!s100 mI49N^n9S_SM3W2Rh05`c0
+!i10b 1
+Abehavior
+R1
+R2
+R4
+R3
+R5
+R6
+DEx4 work 13 carryselecttb 0 22 gC[G7M4:mYA41ScdC[gbC2
+l72
+L15
+VBKNG1doBz]YS>aEjFoH1=1
+R10
+32
+R25
+R26
+R27
+R14
+R15
+!s100 znH^goDJQEk6_W4C`V6oB1
+!i10b 1
+Efulladder
+Z28 w1558440527
+R5
+R6
+R7
+Z29 8C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd
+Z30 FC:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd
+l0
+L4
+VNYh6DCT:^9]JjMo_c454Z1
+R10
+32
+Z31 !s108 1560120217.483000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd|
+Z33 !s107 C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/FullAdder.vhd|
+R14
+R15
+!s100 dzRk^17GLHKQ@6ZN9QUYF2
+!i10b 1
+Abehavior
+R5
+R6
+DEx4 work 9 fulladder 0 22 NYh6DCT:^9]JjMo_c454Z1
+l13
+L12
+V^I_DYPVQQgMooV`DOKD9P1
+!s100 I;>PN1ie6PdKf=[`?F1_M2
+R10
+32
+R31
+R32
+R33
+R14
+R15
+!i10b 1
+Emux
+Z34 w1559522949
+R5
+R6
+R7
+Z35 8C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd
+Z36 FC:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd
+l0
+L4
+VWQ6:1U<BWgN`2jeXmhkOQ1
+!s100 ob7mQQGdT]Q^ATSQLLo:U0
+R10
+32
+!i10b 1
+Z37 !s108 1560120217.916000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd|
+Z39 !s107 C:/Users/LPDar/Documents/SDA/Somadores/CarrySelect/Mux.vhd|
+R14
+R15
+Astructure
+R5
+R6
+Z40 DEx4 work 3 mux 0 22 WQ6:1U<BWgN`2jeXmhkOQ1
+l16
+L14
+Z41 V_kM[[[B[`8L>LCz:df[440
+Z42 !s100 6@[moQfKOL=bSUMK98]U63
+R10
+32
+!i10b 1
+R37
+R38
+R39
+R14
+R15
