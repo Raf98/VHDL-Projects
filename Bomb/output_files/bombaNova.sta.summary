@@ -1,0 +1,213 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -7.074
+TNS   : -1687.669
+
+Type  : Slow Model Setup 'counter3bits:contaSeg2|zerou'
+Slack : -1.579
+TNS   : -7.182
+
+Type  : Slow Model Setup 'counter4bits:contaMin1|zerou'
+Slack : -1.428
+TNS   : -4.090
+
+Type  : Slow Model Setup 'counter4bits:contaSeg1|zerou'
+Slack : -1.419
+TNS   : -5.514
+
+Type  : Slow Model Setup 'setCont'
+Slack : -1.183
+TNS   : -3.771
+
+Type  : Slow Model Setup 'setContagem'
+Slack : -1.153
+TNS   : -15.498
+
+Type  : Slow Model Hold 'setCont'
+Slack : -4.403
+TNS   : -21.357
+
+Type  : Slow Model Hold 'clock'
+Slack : -1.958
+TNS   : -22.183
+
+Type  : Slow Model Hold 'counter4bits:contaSeg1|zerou'
+Slack : -1.769
+TNS   : -8.183
+
+Type  : Slow Model Hold 'counter4bits:contaMin1|zerou'
+Slack : -1.749
+TNS   : -6.527
+
+Type  : Slow Model Hold 'counter3bits:contaSeg2|zerou'
+Slack : -1.363
+TNS   : -6.061
+
+Type  : Slow Model Hold 'setContagem'
+Slack : 0.767
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'counter3bits:contaSeg2|zerou'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'counter4bits:contaSeg1|zerou'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'counter4bits:contaMin1|zerou'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'setCont'
+Slack : 2.957
+TNS   : 0.000
+
+Type  : Slow Model Removal 'setCont'
+Slack : -2.687
+TNS   : -13.435
+
+Type  : Slow Model Removal 'counter4bits:contaSeg1|zerou'
+Slack : -0.275
+TNS   : -0.825
+
+Type  : Slow Model Removal 'counter4bits:contaMin1|zerou'
+Slack : -0.061
+TNS   : -0.244
+
+Type  : Slow Model Removal 'counter3bits:contaSeg2|zerou'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -394.380
+
+Type  : Slow Model Minimum Pulse Width 'setCont'
+Slack : -1.380
+TNS   : -6.380
+
+Type  : Slow Model Minimum Pulse Width 'counter3bits:contaSeg2|zerou'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'counter4bits:contaSeg1|zerou'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'counter4bits:contaMin1|zerou'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'setContagem'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -2.808
+TNS   : -604.604
+
+Type  : Fast Model Setup 'setContagem'
+Slack : -0.352
+TNS   : -4.309
+
+Type  : Fast Model Setup 'counter3bits:contaSeg2|zerou'
+Slack : -0.290
+TNS   : -1.115
+
+Type  : Fast Model Setup 'counter4bits:contaSeg1|zerou'
+Slack : -0.255
+TNS   : -0.628
+
+Type  : Fast Model Setup 'counter4bits:contaMin1|zerou'
+Slack : -0.235
+TNS   : -0.491
+
+Type  : Fast Model Setup 'setCont'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast Model Hold 'setCont'
+Slack : -2.602
+TNS   : -12.722
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.295
+TNS   : -41.497
+
+Type  : Fast Model Hold 'counter4bits:contaMin1|zerou'
+Slack : -1.254
+TNS   : -4.811
+
+Type  : Fast Model Hold 'counter4bits:contaSeg1|zerou'
+Slack : -1.249
+TNS   : -5.942
+
+Type  : Fast Model Hold 'counter3bits:contaSeg2|zerou'
+Slack : -1.088
+TNS   : -5.078
+
+Type  : Fast Model Hold 'setContagem'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'counter3bits:contaSeg2|zerou'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'counter4bits:contaSeg1|zerou'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'counter4bits:contaMin1|zerou'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'setCont'
+Slack : 1.746
+TNS   : 0.000
+
+Type  : Fast Model Removal 'setCont'
+Slack : -1.366
+TNS   : -6.830
+
+Type  : Fast Model Removal 'counter4bits:contaSeg1|zerou'
+Slack : -0.131
+TNS   : -0.393
+
+Type  : Fast Model Removal 'counter4bits:contaMin1|zerou'
+Slack : -0.032
+TNS   : -0.128
+
+Type  : Fast Model Removal 'counter3bits:contaSeg2|zerou'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -394.380
+
+Type  : Fast Model Minimum Pulse Width 'setCont'
+Slack : -1.380
+TNS   : -6.380
+
+Type  : Fast Model Minimum Pulse Width 'counter3bits:contaSeg2|zerou'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'counter4bits:contaSeg1|zerou'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'counter4bits:contaMin1|zerou'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'setContagem'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

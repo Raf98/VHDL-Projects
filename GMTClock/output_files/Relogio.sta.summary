@@ -1,0 +1,357 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -7.919
+TNS   : -224.776
+
+Type  : Slow Model Setup 'contador3Bits:contadorMin2|reachedFive'
+Slack : -2.631
+TNS   : -28.053
+
+Type  : Slow Model Setup 'hasLoad1'
+Slack : -1.765
+TNS   : -23.539
+
+Type  : Slow Model Setup 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -1.607
+TNS   : -5.018
+
+Type  : Slow Model Setup 'hasLoad5'
+Slack : -1.277
+TNS   : -8.814
+
+Type  : Slow Model Setup 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -1.271
+TNS   : -3.574
+
+Type  : Slow Model Setup 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -1.247
+TNS   : -4.696
+
+Type  : Slow Model Setup 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -1.092
+TNS   : -4.146
+
+Type  : Slow Model Setup 'selOp'
+Slack : -1.037
+TNS   : -9.020
+
+Type  : Slow Model Setup 'buttonIn'
+Slack : -0.282
+TNS   : -0.934
+
+Type  : Slow Model Hold 'selOp'
+Slack : -3.811
+TNS   : -18.309
+
+Type  : Slow Model Hold 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -2.231
+TNS   : -8.369
+
+Type  : Slow Model Hold 'contador3Bits:contadorMin2|reachedFive'
+Slack : -1.742
+TNS   : -7.959
+
+Type  : Slow Model Hold 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -1.497
+TNS   : -6.590
+
+Type  : Slow Model Hold 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -1.269
+TNS   : -5.397
+
+Type  : Slow Model Hold 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -1.219
+TNS   : -4.710
+
+Type  : Slow Model Hold 'clock'
+Slack : -0.118
+TNS   : -0.118
+
+Type  : Slow Model Hold 'buttonIn'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'hasLoad5'
+Slack : 0.750
+TNS   : 0.000
+
+Type  : Slow Model Hold 'hasLoad1'
+Slack : 1.290
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'buttonIn'
+Slack : -3.207
+TNS   : -12.828
+
+Type  : Slow Model Recovery 'contador3Bits:contadorMin2|reachedFive'
+Slack : -0.541
+TNS   : -2.705
+
+Type  : Slow Model Recovery 'contador4Bits:contadorHour1|outReachedNine'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'contador4Bits:contadorMin1|outReachedNine'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'contador3Bits:contadorSeg2|reachedFive'
+Slack : 1.027
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : 1.272
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'selOp'
+Slack : 3.480
+TNS   : 0.000
+
+Type  : Slow Model Removal 'selOp'
+Slack : -3.210
+TNS   : -16.050
+
+Type  : Slow Model Removal 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -1.002
+TNS   : -5.010
+
+Type  : Slow Model Removal 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -0.757
+TNS   : -3.785
+
+Type  : Slow Model Removal 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.491
+TNS   : -2.455
+
+Type  : Slow Model Removal 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -0.141
+TNS   : -0.564
+
+Type  : Slow Model Removal 'contador3Bits:contadorMin2|reachedFive'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Slow Model Removal 'buttonIn'
+Slack : 1.151
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -68.380
+
+Type  : Slow Model Minimum Pulse Width 'selOp'
+Slack : -1.380
+TNS   : -6.380
+
+Type  : Slow Model Minimum Pulse Width 'buttonIn'
+Slack : -1.222
+TNS   : -5.222
+
+Type  : Slow Model Minimum Pulse Width 'contador3Bits:contadorMin2|reachedFive'
+Slack : -0.500
+TNS   : -13.000
+
+Type  : Slow Model Minimum Pulse Width 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'hasLoad1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'hasLoad5'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -2.892
+TNS   : -67.910
+
+Type  : Fast Model Setup 'contador3Bits:contadorMin2|reachedFive'
+Slack : -0.670
+TNS   : -6.156
+
+Type  : Fast Model Setup 'hasLoad1'
+Slack : -0.654
+TNS   : -8.755
+
+Type  : Fast Model Setup 'hasLoad5'
+Slack : -0.428
+TNS   : -2.783
+
+Type  : Fast Model Setup 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.170
+TNS   : -0.221
+
+Type  : Fast Model Setup 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -0.034
+TNS   : -0.034
+
+Type  : Fast Model Setup 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast Model Setup 'selOp'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast Model Setup 'contador3Bits:contadorSeg2|reachedFive'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast Model Setup 'buttonIn'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast Model Hold 'selOp'
+Slack : -2.338
+TNS   : -11.393
+
+Type  : Fast Model Hold 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -1.471
+TNS   : -5.653
+
+Type  : Fast Model Hold 'contador3Bits:contadorMin2|reachedFive'
+Slack : -1.206
+TNS   : -5.765
+
+Type  : Fast Model Hold 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -1.121
+TNS   : -5.273
+
+Type  : Fast Model Hold 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -0.989
+TNS   : -4.347
+
+Type  : Fast Model Hold 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.970
+TNS   : -4.446
+
+Type  : Fast Model Hold 'clock'
+Slack : -0.553
+TNS   : -2.135
+
+Type  : Fast Model Hold 'buttonIn'
+Slack : -0.059
+TNS   : -0.215
+
+Type  : Fast Model Hold 'hasLoad5'
+Slack : 0.772
+TNS   : 0.000
+
+Type  : Fast Model Hold 'hasLoad1'
+Slack : 1.020
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'buttonIn'
+Slack : -1.283
+TNS   : -5.132
+
+Type  : Fast Model Recovery 'contador3Bits:contadorMin2|reachedFive'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'contador4Bits:contadorHour1|outReachedNine'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'contador4Bits:contadorMin1|outReachedNine'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'contador3Bits:contadorSeg2|reachedFive'
+Slack : 0.772
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : 0.898
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'selOp'
+Slack : 2.062
+TNS   : 0.000
+
+Type  : Fast Model Removal 'selOp'
+Slack : -1.682
+TNS   : -8.410
+
+Type  : Fast Model Removal 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -0.518
+TNS   : -2.590
+
+Type  : Fast Model Removal 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -0.392
+TNS   : -1.960
+
+Type  : Fast Model Removal 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.234
+TNS   : -1.170
+
+Type  : Fast Model Removal 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -0.092
+TNS   : -0.368
+
+Type  : Fast Model Removal 'contador3Bits:contadorMin2|reachedFive'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast Model Removal 'buttonIn'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -68.380
+
+Type  : Fast Model Minimum Pulse Width 'selOp'
+Slack : -1.380
+TNS   : -6.380
+
+Type  : Fast Model Minimum Pulse Width 'buttonIn'
+Slack : -1.222
+TNS   : -5.222
+
+Type  : Fast Model Minimum Pulse Width 'contador3Bits:contadorMin2|reachedFive'
+Slack : -0.500
+TNS   : -13.000
+
+Type  : Fast Model Minimum Pulse Width 'contador3Bits:contadorSeg2|reachedFive'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador4Bits:contadorMin1|outReachedNine'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador4Bits:contadorSeg1|outReachedNine'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'contador4Bits:contadorHour1|outReachedNine'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'hasLoad1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'hasLoad5'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

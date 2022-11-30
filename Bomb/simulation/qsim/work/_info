@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Rafael\Documents\bombaNova\simulation\qsim
+vbombaNova
+Z1 I0HMbBT>SdV6H@A2D1UN:V1
+Z2 VJDGIaN8GeEVSaoXWDVWJb0
+Z3 dC:\Users\Rafael\Documents\bombaNovaFinal\simulation\qsim
+Z4 w1530482443
+Z5 8bombaNova.vo
+Z6 FbombaNova.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|bombaNova.vo|
+Z9 o-work work -O0
+Z10 nbomba@nova
+!i10b 1
+Z11 !s100 937B=MH`69jMMPTKENNae2
+!s85 0
+Z12 !s108 1530482448.664000
+Z13 !s107 bombaNova.vo|
+!s101 -O0
+vbombaNova_vlg_check_tst
+!i10b 1
+!s100 2A[8R^l^T08fGN4j6RbiP2
+IR6H:IjQfdD`?G]P=YjQ9C1
+VP;I[Nn<znAk@119@cLDMN2
+R3
+Z14 w1530482442
+Z15 8bombaNova.vt
+Z16 FbombaNova.vt
+L0 71
+R7
+r1
+!s85 0
+31
+Z17 !s108 1530482450.099000
+Z18 !s107 bombaNova.vt|
+Z19 !s90 -work|work|bombaNova.vt|
+!s101 -O0
+R9
+nbomba@nova_vlg_check_tst
+vbombaNova_vlg_sample_tst
+!i10b 1
+!s100 Y3]Q29@W^AdbIL<2hXX9j0
+IU3fH<MY6?N:lAU:Bme[S63
+VTF?:7A5dB`<P8bilmG1[e3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+nbomba@nova_vlg_sample_tst
+vbombaNova_vlg_vec_tst
+!i10b 1
+!s100 UHTji5]j9[BJH?0SgWT192
+I6[b089YR9GAHT2E88c[Yf3
+Z20 VDH=M`K?2W7lag3SL6SL;_1
+R3
+R14
+R15
+R16
+L0 997
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z21 nbomba@nova_vlg_vec_tst

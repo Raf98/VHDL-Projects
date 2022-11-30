@@ -1,0 +1,86 @@
+library ieee;
+ieee.std_logic_1164.all;
+ieee.std_logic_arith.all;
+ieee.std_logic_unsigned.all;
+
+entity bomba is
+port(
+ tempoMin: in std_logic_vector(5 downto 0);
+ tempoSeg: in std_logic_vector(5 downto 0);
+ saidaMin: out std_logic_vector(5 downto 0);
+ saidaSeg: out std_logic_vector(5 downto 0);
+ desarme: in std_logic_vector(3 downto 0);
+ setdesarme:in std_logic;
+ fios: in std_logic_vector(4 downto 0);
+ clock: in std_logic;
+ set: in std_logic
+); end bomba;
+
+architecture boom of bomba is
+
+component Divider is
+	 port (
+		 CLK: in STD_LOGIC;
+		 COUT: out STD_LOGIC;
+		 COUT2: out STD_LOGIC;
+		 COUT4: out STD_LOGIC
+		 );
+ end component;
+ 
+component Contador3bits is
+port
+(
+		clock: in std_logic;
+		zerou: out std_logic;
+		load: 			in std_logic_vector(3 downto 0);
+		Q: 				out std_logic_vector(3 downto 0)
+);
+end component;
+	
+component muxbomba is
+port(
+sel: in std_logic_vector(1 downto 0);
+a: in std_logic_vector(3 downto 0);
+c: out std_logic
+);
+end component;
+
+component regis4 is
+port(
+D: in std_logic_vector(3 downto 0);
+clock,clear, load: in std_logic;
+Q: out std_logic_vector(3 downto 0)
+);
+end component;
+
+
+
+
+
+
+
+signal setbomba std_logic:=0;
+signal registro std_logic_vector(3 downto 0);
+signal regresiva4 std_logic;
+signal regressiva2 std_logic;
+signal regressiva std_logic;
+---------------------------------------------------------------------------
+begin
+defuser: regis4
+port map(D=>desarme,clock=>clock,load=>setdesarme,clear=>'0',Q=>registro);
+
+
+
+PROCESS(set)
+BEGIN
+IF set'EVENT and set='1' THEN
+setbomba<='1';
+END IF;
+END PROCESS;
+
+
+DiviMaster: Divider
+port map(CLK=>clock,COUT=>regresiva,COUT2=>regressiva2,COUT4=>regresiva4)
+
+mux: muxbomba
+port map(a(0)=>'0',a(1)=>regressiva,a(2)=>regressiva2,a(3)=>regresiva4,sel=>   ,c=>omegaclock)

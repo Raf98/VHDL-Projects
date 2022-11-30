@@ -1,0 +1,22 @@
+library ieee;
+ieee.std_logic_1164.all;
+ieee.std_logic_arith.all;
+ieee.std_logic_unsigned.all;
+
+entity muxbomba is
+port(
+sel: in std_logic_vector(1 downto 0);
+a: in std_logic_vector(3 downto 0);
+c: out std_logic
+);
+end muxbomba;
+
+architecture mux of muxbomba is
+begin
+
+c<=
+		a(0) WHEN sel="00" ELSE
+		a(1) WHEN sel="01" ELSE
+		a(2) WHEN sel="10" ELSE
+		a(3) WHEN sel="11";
+	end mux;

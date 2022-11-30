@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Contador3bits is 
+port
+(
+		clock: in std_logic;
+		zerou: out std_logic;
+		load: 			in std_logic_vector(3 downto 0);
+		Q: 				out std_logic_vector(3 downto 0)
+);
+end Contador3bits;
+
+architecture conta of Contador3bits is
+
+begin
+zerou<='0'
+--load <= "1001";
+	process(clock)
+		variable count : std_logic_vector(3 downto 0);
+		begin
+			if(load = "0000")then 
+				zerou<='1';
+				count := "1001";
+			else 
+			zerou<='0';
+			end if;
+			if(clock'event and clock = '1')then
+						count := count - 1;
+					end if;			
+		Q<=count;
+	end process;
+
+end conta;
